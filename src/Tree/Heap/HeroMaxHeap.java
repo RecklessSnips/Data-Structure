@@ -31,6 +31,9 @@ public class HeroMaxHeap {
         return length;
     }
 
+    /*
+    在 PriorityQueue中, 手动将arraylist里转化后，添加到heap里，为了执行heapify
+     */
     public void setArray(Hero[] heroes){
         heap = new Hero[heroes.length];
         System.arraycopy(heroes, 0, heap, 0, heroes.length);
